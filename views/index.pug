@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    //- link(rel="icon" type="image/png" sizes="16x16" href="/images/Icon.png");
+    <title>#{title}</title>
+    style 
+        include ../static/style.css
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="https://utsav-joshi.netlify.app/">Home</a></li>
+        <li><a href="https://utsav-joshi.netlify.app/about">About</a></li>
+        <li><a href="https://utsav-joshi.netlify.app/contactform">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Utsav Joshi</h1>
+      <p>#{contents}</p>
+      <form action="/" method="post" id="contact">
+        <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="off"/>
+        <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="off">
+        <textarea name="more" id="more" cols="30" rows="7" placeholder="Give me a feedback . . ." autocomplete="off"></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
